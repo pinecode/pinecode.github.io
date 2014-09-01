@@ -104,6 +104,12 @@ loop();
 // Apply headroom to the nav element
 headroomNav = document.querySelector('nav');
 // construct an instance of Headroom, passing the element
-var headroom = new Headroom(headroomNav);
+var headroom = new Headroom(headroomNav, {
+    tolerance: {
+        up: 10,
+        down: 10
+    }
+});
+
 // initialise
 headroom.init();
