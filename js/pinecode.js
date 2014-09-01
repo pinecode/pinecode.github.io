@@ -10,7 +10,7 @@ $(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
+        }, 1500, 'easeOut');
         event.preventDefault();
     });
 });
@@ -41,9 +41,12 @@ $('.navbar-collapse ul li a').click(function() {
  */
 var header,
     headerPos,
-    logo,
-    logoPos,
-    logoOpacity,
+    nav,
+    navShrinkPoint = 300,
+    navShrink = false;
+    // logo,
+    // logoPos,
+    // logoOpacity,
     lastPosition = -1;
 
 // Detect request animation frame
@@ -57,6 +60,7 @@ var scroll = window.requestAnimationFrame ||
 
 // Assign the elements
 header = $('header');
+nav = $('nav');
 headerContent = $('header .parallax');
 
 function loop() {
@@ -79,6 +83,17 @@ function loop() {
         opacity: headerContentOpacity,
     });
 
+    // Toggle the navShrink class
+    if (top > navShrinkPoint && !navShrink) {
+        nav.addClass('navbar-shrink');
+        navShrink = true;
+    }
+
+    if (top < navShrinkPoint && navShrink) {
+        nav.removeClass('navbar-shrink');
+        navShrink = false;
+    }
+
     // Recall the loop
     scroll(loop)
 }
@@ -86,5 +101,9 @@ function loop() {
 // Call the loop for the first time
 loop();
 
-// Trigger the header background video
-$(".player").mb_YTPlayer();
+// Apply headroom to the nav element
+headroomNav = document.querySelector('nav');
+// construct an instance of Headroom, passing the element
+var headroom = new Headroom(headroomNav);
+// initialise
+headroom.init();
