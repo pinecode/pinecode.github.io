@@ -10,7 +10,7 @@ p {
 }
 
 p.lead {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 100;
 }
 
@@ -44,6 +44,11 @@ hr {
     border-top: 1px solid rgba(0,0,0,.15);
 }
 
+.btn {
+    border-radius: 2px;
+    transition: all 150ms ease;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -55,7 +60,7 @@ header {
     background-image: url('/img/bg.jpg');
     background-size: cover;
     background-position-y: 50%;
-    height: 500px;
+    height: 475px;
 }
 
 header .container {
@@ -63,33 +68,21 @@ header .container {
     padding-bottom: 0;
 }
 
-header img {
-    display: block;
-    margin: 0 0 20px;
-}
-
-header hr {
-    visibility: hidden;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border-top: 1px solid rgba(255,255,255,.15);
-}
-
-header .intro-text .name {
-    display: block;
-    text-transform: uppercase;
-    font-family: 'allumi-std',"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-header .intro-text .skills {
-    font-size: 1.25rem;
-    font-weight: 300;
-}
-
 header h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
+}
+
+header p.lead {
+    margin: 20px auto 30px;
+}
+
+header .btn {
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+header .btn:hover {
+    background: rgba(0, 130, 255, 0.65);
 }
 
 nav {
@@ -122,7 +115,6 @@ nav a:hover {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 999;
     background-image: url('/img/grid.png');
     background-position: 50% 50%;
     overflow: visible;
@@ -145,7 +137,7 @@ nav a:hover {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
+        padding: 15px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -176,23 +168,22 @@ nav a:hover {
     position: relative;
 }
 
-.navbar-header span {
-    position: absolute;
-    left: -11px;
-    top: 12px;
-    opacity: 0;
-    transition: all 0.25s linear;
-}
-
 .navbar-header a {
     position: relative;
     left: 0;
+    padding-left: 42px;
     transition: all 0.5s linear;
 }
 
-.navbar-shrink .navbar-header span {
+.navbar-header a img {
+    position: absolute;
     left: 0;
-    opacity: 1;
+    top: 8px;
+    transition: all 0.5s linear;
+}
+
+.navbar-header.navbar-shrink a img {
+    top: 6px;
 }
 
 .navbar-shrink .navbar-header a {
@@ -241,11 +232,18 @@ section h2 {
     margin: 0;
 }
 
-section.success {
-    /*color: #fff;*/
-    /*background: url('https://s3.amazonaws.com/ooomf-com-files/xDtuvK3GRJGUSUHgj0ew_IMG_3860.jpg');*/
+section.about {
+    background-color: rgba(0, 0, 0, 0.95);
     background-size: cover;
     background-position-y: 50%;
+}
+
+.service, .service h3 {
+    text-align: center;
+}
+
+.service p {
+    font-size: 1.5rem;
 }
 
 @media(max-width:767px) {
@@ -337,10 +335,11 @@ section.success {
 
 .btn-outline {
     margin-top: 15px;
-    border: solid 2px #fff;
-    font-size: 20px;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    font-size: 2rem;
     color: #fff;
     background: 0 0;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.33);
     transition: all .3s ease-in-out;
 }
 
@@ -348,9 +347,9 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 2px #fff;
-    color: #{{ site.color.primary }};
-    background: #fff;
+    border-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .floating-label-form-group {
@@ -536,7 +535,7 @@ footer .footer-below {
 
 .pattern-overlay {
     background: rgba(0,0,0,0.75);
-    padding: 110px 0 32px;
+    padding: 75px 0 32px;
     height: 100%;
 }
 
@@ -558,4 +557,12 @@ footer .footer-below {
 
 .headroom--unpinned {
     transform: translateY(-100%);
+}
+
+.inverted {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.inverted hr {
+    border-top: 1px solid rgba(255,255,255,.15);
 }

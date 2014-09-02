@@ -6,11 +6,11 @@
 
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
-    $('.page-scroll a').bind('click', function(event) {
+    $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeOut');
+        }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
@@ -75,13 +75,12 @@ function loop() {
     lastPosition = window.pageYOffset;
 
     headerPos = 50 + (top * 0.075)+'%';
-    gridPos   = 50 + (top * 0.25);
+    gridPos   = (top * 0.2);
 
     headerContentOpacity = (100 - ((top / 300) * 100)) / 100;
 
     header.css('background-position-y', headerPos);
-    grid.css('transform', 'translate(0, '+gridPos+'px)');
-    console.log("grid.css('transform:', 'translate(0, '"+gridPos * 5+"'px)'");
+    grid.css('transform', 'translate(0px, ' + gridPos + 'px)');
 
 
     headerContent.css({
