@@ -41,12 +41,11 @@ $('.navbar-collapse ul li a').click(function() {
  */
 var header,
     headerPos,
+    grid,
+    gridPos,
     nav,
     navShrinkPoint = 300,
     navShrink = false;
-    // logo,
-    // logoPos,
-    // logoOpacity,
     lastPosition = -1;
 
 // Detect request animation frame
@@ -60,6 +59,7 @@ var scroll = window.requestAnimationFrame ||
 
 // Assign the elements
 header = $('header');
+grid = $('header .grid-bg');
 nav = $('nav');
 headerContent = $('header .parallax');
 
@@ -75,10 +75,15 @@ function loop() {
     lastPosition = window.pageYOffset;
 
     headerPos = 50 + (top * 0.075)+'%';
+    gridPos   = 50 + (top * 0.25);
 
     headerContentOpacity = (100 - ((top / 300) * 100)) / 100;
 
     header.css('background-position-y', headerPos);
+    grid.css('transform', 'translate(0, '+gridPos+'px)');
+    console.log("grid.css('transform:', 'translate(0, '"+gridPos * 5+"'px)'");
+
+
     headerContent.css({
         opacity: headerContentOpacity,
     });
