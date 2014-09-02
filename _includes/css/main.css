@@ -61,6 +61,7 @@ header {
     background-size: cover;
     background-position-y: 50%;
     height: 475px;
+    overflow: hidden;
 }
 
 header .container {
@@ -70,6 +71,10 @@ header .container {
 
 header h1 {
     font-size: 5rem;
+}
+
+header h1 strong {
+    color: rgba(255, 184, 0, 0.9);
 }
 
 header p.lead {
@@ -230,12 +235,6 @@ section h2 {
 
 .section-overview p {
     margin: 0;
-}
-
-section.about {
-    background-color: rgba(0, 0, 0, 0.95);
-    background-size: cover;
-    background-position-y: 50%;
 }
 
 .service, .service h3 {
