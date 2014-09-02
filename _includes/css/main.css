@@ -51,13 +51,11 @@ header {
     text-align: center;
     color: #fff;
     background: black;
-    /*background-image: url('/img/river.jpg');*/
-    background-image: url('https://s3.amazonaws.com/ooomf-com-files/IHLjdHdzSvi0rgUMMlSK_TE3_0286.jpg');
+    background-image: url('/img/bg.jpg');
     background-size: cover;
     background-position-y: 50%;
+    height: 500px;
 }
-
-/*https://s3.amazonaws.com/ooomf-com-files/pygwO3glRbaBCh2uRyd4_8420_rgb.jpg*/
 
 header .container {
     padding-top: 50px;
@@ -70,6 +68,7 @@ header img {
 }
 
 header hr {
+    visibility: hidden;
     margin-top: 25px;
     margin-bottom: 25px;
     border-top: 1px solid rgba(255,255,255,.15);
@@ -110,6 +109,16 @@ nav a:hover {
 
 #header-logo {
     position: relative;
+}
+
+.grid-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-image: url('/img/grid.png');
+    background-position: 50% 75%;
+    overflow: visible;
 }
 
 @media(min-width:768px) {
@@ -226,8 +235,8 @@ section h2 {
 }
 
 section.success {
-    color: #fff;
-    background: url('https://s3.amazonaws.com/ooomf-com-files/xDtuvK3GRJGUSUHgj0ew_IMG_3860.jpg');
+    /*color: #fff;*/
+    /*background: url('https://s3.amazonaws.com/ooomf-com-files/xDtuvK3GRJGUSUHgj0ew_IMG_3860.jpg');*/
     background-size: cover;
     background-position-y: 50%;
 }
@@ -521,7 +530,7 @@ footer .footer-below {
 .pattern-overlay {
     background: rgba(0,0,0,0.75);
     padding: 110px 0 32px;
-    min-height: 496px;
+    height: 100%;
 }
 
 .pattern-overlay.subdued {
