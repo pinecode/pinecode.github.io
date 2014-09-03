@@ -193,10 +193,6 @@ nav a:hover {
     top: 6px;
 }
 
-.navbar-shrink .navbar-header a {
-    left: 28px;
-}
-
 .navbar a:focus {
     outline: 0;
 }
