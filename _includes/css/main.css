@@ -98,7 +98,7 @@ header .btn:hover {
 }
 
 nav {
-    background-color: rgba(0,0,0,0.85);
+    background-color: rgba(25,25,25,0.9);
     box-shadow: 0 3px 0 rgba(0,0,0,0.1);
     transition: background-color 0.5s ease;
 }
