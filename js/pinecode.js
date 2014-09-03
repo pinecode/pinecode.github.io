@@ -117,3 +117,5 @@ var headroom = new Headroom(headroomNav, {
 
 // initialise
 headroom.init();
+
+$("textarea").autoGrow();

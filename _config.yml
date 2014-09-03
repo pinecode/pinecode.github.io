@@ -1,11 +1,11 @@
 # Site settings
 title: Pinecode
-email: daniel@pinecode.ca
+email: echo.pony@gmail.com
 description: "Here's a description of Pinecode and how great Pinecode is!"
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
-  primary: 1D83C1
+  primary: 0082FF
   secondary: 0A1E23
   secondary-dark: 2B303B
 

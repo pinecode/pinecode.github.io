@@ -3,6 +3,7 @@
 body {
     overflow-x: hidden;
     font-weight: 100;
+    position: relative;
 }
 
 p {
@@ -67,6 +68,7 @@ header {
     background-position-y: 50%;
     height: 475px;
     overflow: hidden;
+    position: relative;
 }
 
 header .container {
@@ -96,13 +98,9 @@ header .btn:hover {
 }
 
 nav {
-    background-color: rgba(30,10,0,0.85);
+    background-color: rgba(0,0,0,0.85);
     box-shadow: 0 3px 0 rgba(0,0,0,0.1);
     transition: background-color 0.5s ease;
-}
-
-nav.navbar-shrink {
-    background-color: rgba(30,10,0,0.95);
 }
 
 nav a {
@@ -127,7 +125,6 @@ nav a:hover {
     position: absolute;
     background-image: url('/img/grid.png');
     background-position: 50% 50%;
-    overflow: visible;
 }
 
 @media(min-width:768px) {
@@ -281,7 +278,8 @@ section h2 {
 }
 
 #services {
-    /*background-color: rgb(220, 247, 242);*/
+    background: url(http://subtlepatterns.com/patterns/subtle_dots.png);
+
 }
 
 .service, .service h3 {
@@ -424,6 +422,14 @@ section h2 {
     background: rgba(255, 255, 255, 0.15);
 }
 
+#contact {
+    /*background: url(http://subtlepatterns.com/patterns/pw_maze_white.png);*/
+    /*background: url(http://subtlepatterns.com/patterns/pw_maze_black.png);*/
+    background: url(http://subtlepatterns.com/patterns/cream_dust.png);
+    background: url(http://subtlepatterns.com/patterns/shattered.png);
+    background: url(http://subtlepatterns.com/patterns/subtle_dots.png);
+}
+
 .floating-label-form-group {
     position: relative;
     margin-bottom: 0;
@@ -443,6 +449,10 @@ section h2 {
     background: 0 0;
     box-shadow: none!important;
     resize: none;
+}
+
+.floating-label-form-group textarea {
+    height: 100px;
 }
 
 .floating-label-form-group label {
@@ -491,11 +501,12 @@ footer h3 {
 }
 
 footer .footer-above {
-    padding-top: 50px;
+    padding-top: 25px;
+    background: url(http://subtlepatterns.com/patterns/twinkle_twinkle.png);
 }
 
 footer .footer-col {
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 footer .footer-below {

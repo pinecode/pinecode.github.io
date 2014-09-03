@@ -18,7 +18,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "//forms.brace.io/{{ site.address }}",
+                url: "//forms.brace.io/echo.pony@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
@@ -28,6 +28,7 @@ $(function() {
                 },
                 cache: false,
                 success: function() {
+                    console.log('success sent message');
                     // Success message
                     $('#success').html("<div class='alert alert-success'>");
                     $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
@@ -41,6 +42,7 @@ $(function() {
                     $('#contactForm').trigger("reset");
                 },
                 error: function() {
+                    console.log('failed sent message');
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
