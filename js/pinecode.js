@@ -44,7 +44,7 @@ var header,
     grid,
     gridPos,
     nav,
-    navShrinkPoint = 300,
+    navShrinkPoint = 50,
     navShrink = false;
     lastPosition = -1;
 

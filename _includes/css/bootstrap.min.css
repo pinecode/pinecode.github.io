@@ -228,7 +228,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 body {
-    font-family: "allumi-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'allumi-std', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
     color: # {
@@ -324,7 +324,7 @@ hr {
     clip: auto
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: "Muli", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'allumi-std', 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     line-height: 1.1;
     color: inherit

@@ -3,16 +3,15 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-6">
-                        <h3>Location</h3>
+                    <div class="footer-col col-md-4">
+                        <img src="img/logo128.png" alt="Pinecode Logo" />
+                    </div>
+                    <div class="footer-col col-md-4">
                         <p>
-                            {% for adress in site.address %}
-                                {{ adress.line }} <br>
-		                    {% endfor %}
+                            Victoria, BC
                         </p>
                     </div>
-                    <div class="footer-col col-md-6">
-                        <h3>Social</h3>
+                    <div class="footer-col col-md-4">
                         <ul class="list-inline">
                             {% for network in site.social %}
                             <li>
@@ -22,13 +21,9 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="footer-below bg-grey">
-            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}
+                        <p><small>Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}</small></p>
                     </div>
                 </div>
             </div>
