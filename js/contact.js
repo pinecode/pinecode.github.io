@@ -1,75 +1,67 @@
 $(function() {
 
-    $("input,textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
+    $('#contactForm').submit(function(event) {
+        event.preventDefault();
+        var form = $(this),
+            url = form.attr('action'),
+            data = {
+                name: $("input#name", form).val(),
+                phone: $("input#email", form).val(),
+                email: $("input#phone", form).val(),
+                message: $("textarea#message", form).val()
+            },
+            firstName = data.name;
 
-            // get values from form
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
+        // Check for white space in name for Success/Fail message
+        if (firstName.indexOf(' ') >= 0) {
+            firstName = name.split(' ').slice(0, -1).join(' ');
+        }
 
-            $.ajax({
-                url: "//forms.brace.io/echo.pony@gmail.com",
-                type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message
-                },
-                dataType: 'json',
-                cache: false,
-                success: function() {
-                    console.log('success sent message');
-                    // Success message
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-success')
-                        .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                        .append('</div>');
+        console.log(url,
+            {
+                name: name,
+                phone: phone,
+                email: email,
+                message: message
+            });
 
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-                error: function(jqXHR, status, error) {
-                    console.log(jqXHR, status, error);
-                    // Fail message
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                        .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
-                    $('#success > .alert-danger').append('</div>');
-                    //clear all fields
-                    $('#contactForm').trigger("reset");
-                },
-            })
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
-    });
+        $.post(
+            url,
+            data,
+            null,
+            'json'
+        )
+        .done(function() {
+            // Success message
+            $('#success').html("<div class='alert alert-success'>");
+            $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+            $('#success > .alert-success')
+                .append("<strong>Thank you "+firstName+"! Your message is sent and we'll get back to you soon.</strong>");
+            $('#success > .alert-success')
+                .append('</div>');
 
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
+            $('#success').show(200);
+
+            //clear all fields
+            $('#contactForm').trigger('reset');
+        })
+        .fail(function(jqXHR, status, error) {
+            console.log(jqXHR, status, error);
+            // Fail message
+            $('#success').html("<div class='alert alert-danger'>");
+            $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                .append("</button>");
+            $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that the mail service isn't responding. Please try again later!");
+            $('#success > .alert-danger').append('</div>');
+        })
     });
 });
 
 
 /*When clicking on Full hide fail/success boxes */
 $('#name').focus(function() {
-    $('#success').html('');
+    $('#success').hide(200, function() {
+        $(this).html('');
+    });
 });
