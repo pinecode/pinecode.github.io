@@ -4,9 +4,9 @@
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-6">
-                        {% for address in site.address %}
-                            <p><small>{{ address.line }}</small></p>
-                        {% endfor %}
+                        <p><small>{% for address in site.address %}
+                            {{ address.line }}<br>
+                        {% endfor %}</small></p>
                     </div>
                     <div class="footer-col col-md-6">
                         <ul class="list-inline">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <p><small>Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}</small></p>
+                        <h6 class="subdued">Copyright &copy; {{ site.title }} 20{{ site.time | date: '%y' }}</h6>
                     </div>
                 </div>
             </div>

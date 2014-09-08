@@ -281,7 +281,7 @@ header .btn, .btn-social {
 }
 
 header .btn:hover {
-    background: rgba(0, 130, 255, 0.65);
+    background: rgba(0, 130, 255, 0.66);
 }
 
 @media(min-width:768px) {
@@ -304,17 +304,17 @@ header .btn:hover {
 
 /* ----- SERVICES ----- */
 
-#services {
+#who-we-are {
     background: url(http://subtlepatterns.com/patterns/brillant.png);
 }
 
-#services img {
+#who-we-are img {
     width: 100%;
     max-width: 256px;
     margin: 0 auto;
 }
 
-#services hr {
+#who-we-are hr {
     visibility: hidden;
 }
 
@@ -763,4 +763,12 @@ footer .footer-below {
 
 .img-centered {
     margin: 0 auto;
+}
+
+.btn.blue {
+    background: rgba(0, 130, 255, 0.33);
+}
+
+.btn.blue:hover {
+    background: rgba(0, 130, 255, 0.66);
 }
