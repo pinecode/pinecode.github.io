@@ -3,15 +3,12 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
-                        <img src="img/logo128.png" alt="Pinecode Logo" />
+                    <div class="footer-col col-md-6">
+                        {% for address in site.address %}
+                            <p><small>{{ address.line }}</small></p>
+                        {% endfor %}
                     </div>
-                    <div class="footer-col col-md-4">
-                        <p>
-                            Victoria, BC
-                        </p>
-                    </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <ul class="list-inline">
                             {% for network in site.social %}
                             <li>

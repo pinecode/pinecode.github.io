@@ -7,7 +7,8 @@ $(function() {
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
+
+            // get values from form
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
@@ -17,6 +18,7 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
                 url: "//forms.brace.io/echo.pony@gmail.com",
                 type: "POST",
@@ -26,6 +28,7 @@ $(function() {
                     email: email,
                     message: message
                 },
+                dataType: 'json',
                 cache: false,
                 success: function() {
                     console.log('success sent message');
@@ -41,8 +44,8 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-                error: function() {
-                    console.log('failed sent message');
+                error: function(jqXHR, status, error) {
+                    console.log(jqXHR, status, error);
                     // Fail message
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
