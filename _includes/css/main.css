@@ -89,7 +89,7 @@ hr {
 /* ----- NAV/NAV-BAR -----*/
 
 nav {
-    background: rgba(25, 25, 25, 0.2);
+    background: rgba(25, 25, 25, 0.5);
     transition: background-color .5s, transform 200ms;
 }
 
@@ -143,21 +143,7 @@ nav a:hover {
     position: relative;
 }
 
-.navbar-header a {
-    position: relative;
-    left: 0;
-    padding-left: 42px;
-    transition: all 0.5s;
-}
-
-.navbar-header a img {
-    position: absolute;
-    left: 0;
-    top: 8px;
-    transition: all 0.5s;
-}
-
-.navbar-header.navbar-shrink a img {
+.navbar.navbar-shrink a img {
     top: 6px;
 }
 
@@ -171,6 +157,20 @@ nav a:hover {
 
 .navbar .navbar-nav li a:focus {
     outline: 0;
+}
+
+.navbar-header a {
+    position: relative;
+    left: 0;
+    padding-left: 42px;
+    transition: all 0.5s;
+}
+
+.navbar-header a img {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    transition: all 0.5s;
 }
 
 .navbar-default,
