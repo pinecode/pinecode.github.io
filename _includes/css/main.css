@@ -36,6 +36,10 @@ body {
     position: relative;
 }
 
+html, body {
+    height:100%;
+}
+
 p {
     font-size: 20px;
 }
@@ -85,6 +89,10 @@ hr {
  * 2. STRUCTURE / LAYOUT
  * -----------------------------------------------------------------------------
  */
+
+.container {
+    padding: 50px;
+}
 
 /* ----- NAV/NAV-BAR -----*/
 
@@ -252,15 +260,9 @@ header {
     background-image: url('/img/bg.jpg');
     background-size: cover;
     background-position-y: 50%;
-    min-height: 300px;
-    overflow: hidden;
+    height: 100%;
     position: relative;
     text-shadow: 0 2px 0 rgba(0,0,0,0.5);
-}
-
-header .container {
-    padding-top: 50px;
-    padding-bottom: 0;
 }
 
 header h1 {
@@ -318,6 +320,34 @@ header .btn:hover {
     visibility: hidden;
 }
 
+#who-we-are ul {
+    list-style-type: none;
+}
+
+#who-we-are li {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+}
+
+#who-we-are li img {
+    width: 128px;
+}
+
+#who-we-are li:first-child {
+    position: relative;
+    left: 35px;
+}
+
+#who-we-are li:last-child {
+    position: relative;
+    right: 35px;
+}
+
+#who-we-are li:first-child, #who-we-are li:last-child {
+    z-index: 1;
+}
+
 .service, .service h3 {
     text-align: center;
     margin-top: 2rem;
@@ -345,20 +375,13 @@ header .btn:hover {
     width: 100%;
 }
 
-/* ----- ABOUT ----- */
-
-#about {
-    background-image: url('img/swash/waves.jpg');
-    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
-    background-position: 50%
-    background-size: cover;
-}
-
 /* ----- CONTACT ----- */
 
 #contact {
     padding: 0;
+    height: 100%;
     background: url(http://31.media.tumblr.com/560a35b8fb40b1c069fa18ef9f2ea179/tumblr_n4cm73ozlb1st5lhmo1_1280.jpg);
+    background-color: #333;
     background-size: cover;
     background-position: 50%;
     position: relative;
@@ -752,13 +775,13 @@ footer .footer-below {
 }
 
 .pattern-overlay {
-    background: rgba(0,0,0,0.66);
-    padding: 75px 0;
+    background: rgba(0,0,0,0.8);
+    padding: 0;
     height: 100%;
 }
 
 .pattern-overlay.subdued {
-    background: rgba(0,20,50,0.33);
+    background: rgba(0,0,0,0.66);
 }
 
 .img-centered {
@@ -771,4 +794,14 @@ footer .footer-below {
 
 .btn.blue:hover {
     background: rgba(0, 130, 255, 0.66);
+}
+
+.vertical-centered {
+    height: 450px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
