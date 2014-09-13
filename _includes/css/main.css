@@ -260,7 +260,7 @@ header {
     background-image: url('/img/bg.jpg');
     background-size: cover;
     background-position-y: 50%;
-    height: 100%;
+    min-height: 100%;
     position: relative;
     text-shadow: 0 2px 0 rgba(0,0,0,0.5);
 }
@@ -796,9 +796,10 @@ footer .footer-below {
     background: rgba(0, 130, 255, 0.66);
 }
 
-.vertical-centered {
-    height: 450px;
+.vertically-centered {
+    height: 100%;
     margin: auto;
+    padding: 0;
     position: absolute;
     top: 0;
     right: 0;
