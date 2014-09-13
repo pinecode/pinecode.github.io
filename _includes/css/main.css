@@ -223,7 +223,6 @@ section h2 {
 
 .btn {
     border-radius: 2px;
-    transition: all 150ms ease;
 }
 
 .btn-outline {
@@ -234,6 +233,12 @@ section h2 {
     background: 0 0;
     text-shadow: 0 2px 0 rgba(0,0,0,0.33);
     transition: all .3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 600
+}
+
+header .btn-outline:hover, #contact .btn-outline:hover {
+    background: rgba(0, 130, 255, 0.66);
 }
 
 .btn-outline:hover,
@@ -277,15 +282,6 @@ header p.lead {
     margin: 20px auto 30px;
 }
 
-header .btn, .btn-social {
-    text-transform: uppercase;
-    font-weight: 600
-}
-
-header .btn:hover {
-    background: rgba(0, 130, 255, 0.66);
-}
-
 @media(min-width:768px) {
     header .intro-text .name {
         font-size: 4.75rem;
@@ -301,7 +297,7 @@ header .btn:hover {
     height: 100%;
     position: absolute;
     background-image: url('/img/grid.png');
-    background-position: 50% 50%;
+    background-position: 50% 0;
 }
 
 header .container {
@@ -790,7 +786,7 @@ footer .footer-below {
 }
 
 .pattern-overlay.subdued {
-    background: rgba(0,0,0,0.66);
+    background: rgba(0,0,0,0.6);
 }
 
 .img-centered {

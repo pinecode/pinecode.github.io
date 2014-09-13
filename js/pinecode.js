@@ -77,7 +77,7 @@ function loop() {
     headerPos = 50 + (top * 0.075)+'%';
     gridPos   = (top * 0.2);
 
-    headerContentOpacity = (100 - ((top / 300) * 100)) / 100;
+    headerContentOpacity = (100 - ((top / (window.innerHeight / 1.75)) * 100)) / 100;
 
     header.css('background-position-y', headerPos);
     grid.css('transform', 'translate(0px, ' + gridPos + 'px)');
