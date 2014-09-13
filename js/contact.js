@@ -6,8 +6,8 @@ $(function() {
             url = form.attr('action'),
             data = {
                 name: $("input#name", form).val(),
-                phone: $("input#email", form).val(),
-                email: $("input#phone", form).val(),
+                phone: $("input#phone", form).val(),
+                email: $("input#email", form).val(),
                 message: $("textarea#message", form).val()
             },
             firstName = data.name;
