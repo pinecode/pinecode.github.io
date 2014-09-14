@@ -25,3 +25,5 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
