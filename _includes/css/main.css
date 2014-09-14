@@ -10,6 +10,7 @@
  *      a. Navbar
  *      b. Sections
  *      c. Buttons
+ *      d. Alerts
  * 3. Document Sections
  *      a. Header
  *      b. Services
@@ -91,7 +92,7 @@ hr {
  */
 
 .container {
-    padding: 50px;
+    padding: 75px 0;
 }
 
 /* ----- NAV/NAV-BAR -----*/
@@ -250,6 +251,22 @@ header .btn-outline:hover, #contact .btn-outline:hover {
     background: rgba(255, 255, 255, 0.15);
 }
 
+/* ----- ALERTS -----*/
+
+.alert {
+    border-radius: 2px;
+}
+
+.alert-danger {
+    background-color: rgba(255, 0, 51, 0.65);
+    border: none;
+}
+
+.alert-success {
+    background-color: rgba(0, 130, 255, 0.65);
+    border: none;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * SECTION-SPECFIC SYLES
@@ -261,14 +278,12 @@ header .btn-outline:hover, #contact .btn-outline:hover {
 header {
     text-align: center;
     color: #fff;
-    background: black;
-    /*background-image: url('/img/bg.jpg');*/
     background-image: url('/img/hero-bg.jpg');
     background-size: cover;
     background-position-y: 50%;
-    height: 100%;
     position: relative;
     text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    min-height: 100%;
 }
 
 header h1 {
@@ -280,16 +295,29 @@ header h1 strong {
 }
 
 header p.lead {
-    margin: 20px auto 30px;
+    margin: 20px 15% 30px;
 }
 
-@media(min-width:768px) {
-    header .intro-text .name {
-        font-size: 4.75rem;
+@media(max-width:768px) {
+    .container {
+        padding: 35px 0;
     }
 
-    header .intro-text .skills {
-        font-size: 1.75rem;
+    header {
+        min-height: 0;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    header h1 {
+        font-size: 4rem;
+    }
+
+    header p.lead {
+        font-size: 2.25rem;
+        margin: 20px 5% 30px;
     }
 }
 
@@ -300,11 +328,6 @@ header p.lead {
     background-image: url('/img/grid.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
-}
-
-header .container {
-    padding: 0;
-    height: 540px;
 }
 
 #hero-logo {
@@ -406,17 +429,13 @@ header .container {
 
 #contact {
     padding: 0;
-    height: 100%;
     /*background: url(http://31.media.tumblr.com/560a35b8fb40b1c069fa18ef9f2ea179/tumblr_n4cm73ozlb1st5lhmo1_1280.jpg);*/
     background: url(img/contact-bg.jpg);
     background-color: #333;
     background-size: cover;
     background-position: 50%;
     position: relative;
-}
-
-#contact .container {
-    height: 350px;
+    min-height: 100%;
 }
 
 .floating-label-form-group {
@@ -807,9 +826,10 @@ footer .footer-below {
 }
 
 .pattern-overlay {
-    background: rgba(0,0,0,0.75);
-    padding: 0;
+    position: absolute;
+    width: 100%;
     height: 100%;
+    background: rgba(0,0,0,0.75);
 }
 
 .pattern-overlay.subdued {
@@ -836,4 +856,14 @@ footer .footer-below {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
 }

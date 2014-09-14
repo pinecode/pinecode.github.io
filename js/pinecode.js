@@ -92,6 +92,6 @@ loop();
 
 $("textarea").autoGrow();
 
-$(function() {
+$(window).load(function() {
     header.addClass('loaded');
 });
