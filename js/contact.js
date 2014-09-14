@@ -1,5 +1,15 @@
 $(function() {
 
+    validateForm = function(data) {
+        messages = [];
+
+        if (data.name == '' || data.name == undefined) {
+            console.log('lol');
+        }
+
+        return;
+    }
+
     $('#contactForm').submit(function(event) {
         event.preventDefault();
         var form = $(this),
@@ -17,13 +27,8 @@ $(function() {
             firstName = name.split(' ').slice(0, -1).join(' ');
         }
 
-        console.log(url,
-            {
-                name: name,
-                phone: phone,
-                email: email,
-                message: message
-            });
+        // If this fails,
+        validateForm(data);
 
         $.post(
             url,

@@ -262,7 +262,8 @@ header {
     text-align: center;
     color: #fff;
     background: black;
-    background-image: url('/img/bg.jpg');
+    /*background-image: url('/img/bg.jpg');*/
+    background-image: url('/img/hero-bg.jpg');
     background-size: cover;
     background-position-y: 50%;
     height: 100%;
@@ -297,12 +298,37 @@ header p.lead {
     height: 100%;
     position: absolute;
     background-image: url('/img/grid.png');
+    background-repeat: no-repeat;
     background-position: 50% 0;
 }
 
 header .container {
     padding: 0;
     height: 540px;
+}
+
+#hero-logo {
+    position: relative;
+    top: -50px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.loaded #hero-logo {
+    top: 0px;
+    opacity: 1;
+}
+
+#hero-content {
+    position: relative;
+    top: 25px;
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.loaded #hero-content {
+    top: 0px;
+    opacity: 1;
 }
 
 /* ----- SERVICES ----- */
@@ -381,7 +407,8 @@ header .container {
 #contact {
     padding: 0;
     height: 100%;
-    background: url(http://31.media.tumblr.com/560a35b8fb40b1c069fa18ef9f2ea179/tumblr_n4cm73ozlb1st5lhmo1_1280.jpg);
+    /*background: url(http://31.media.tumblr.com/560a35b8fb40b1c069fa18ef9f2ea179/tumblr_n4cm73ozlb1st5lhmo1_1280.jpg);*/
+    background: url(img/contact-bg.jpg);
     background-color: #333;
     background-size: cover;
     background-position: 50%;
@@ -780,7 +807,7 @@ footer .footer-below {
 }
 
 .pattern-overlay {
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.75);
     padding: 0;
     height: 100%;
 }

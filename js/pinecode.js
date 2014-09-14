@@ -43,9 +43,6 @@ var header,
     headerPos,
     grid,
     gridPos,
-    nav,
-    navShrinkPoint = 50,
-    navShrink = false;
     lastPosition = -1;
 
 // Detect request animation frame
@@ -59,8 +56,7 @@ var scroll = window.requestAnimationFrame ||
 
 // Assign the elements
 header = $('header');
-grid = $('header .grid-bg');
-nav = $('nav');
+grid   = $('header .grid-bg');
 headerContent = $('header .parallax');
 
 function loop() {
@@ -87,17 +83,6 @@ function loop() {
         opacity: headerContentOpacity,
     });
 
-    // Toggle the navShrink class
-    if (top > navShrinkPoint && !navShrink) {
-        nav.addClass('navbar-shrink');
-        navShrink = true;
-    }
-
-    if (top < navShrinkPoint && navShrink) {
-        nav.removeClass('navbar-shrink');
-        navShrink = false;
-    }
-
     // Recall the loop
     scroll(loop)
 }
@@ -105,17 +90,8 @@ function loop() {
 // Call the loop for the first time
 loop();
 
-// Apply headroom to the nav element
-headroomNav = document.querySelector('nav');
-// construct an instance of Headroom, passing the element
-var headroom = new Headroom(headroomNav, {
-    tolerance: {
-        up: 10,
-        down: 10
-    }
-});
-
-// initialise
-headroom.init();
-
 $("textarea").autoGrow();
+
+$(function() {
+    header.addClass('loaded');
+});
