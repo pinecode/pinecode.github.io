@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pinecode</title>
+    <description>Here&#39;s a description of Pinecode and how great Pinecode is!</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 14 Sep 2014 16:03:39 -0700</pubDate>
+    <lastBuildDate>Sun, 14 Sep 2014 16:03:39 -0700</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Whole Hearted Eats</title>
+        <description>
+</description>
+        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
+        <link>/web%20development%20&amp;%20design/2014/07/18/Whole-Hearted-Eats/</link>
+        <guid isPermaLink="true">/web%20development%20&amp;%20design/2014/07/18/Whole-Hearted-Eats/</guid>
+        
+        
+        <category>web development &amp;amp; design</category>
+        
+      </item>
+    
+      <item>
+        <title>Google Plus</title>
+        <description>
+</description>
+        <pubDate>Sun, 13 Jul 2014 00:00:00 -0700</pubDate>
+        <link>/web%20development%20&amp;%20design/2014/07/13/Google-Plus/</link>
+        <guid isPermaLink="true">/web%20development%20&amp;%20design/2014/07/13/Google-Plus/</guid>
+        
+        
+        <category>web development &amp;amp; design</category>
+        
+      </item>
+    
+  </channel>
+</rss>
