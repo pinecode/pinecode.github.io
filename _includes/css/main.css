@@ -32,7 +32,6 @@
  */
 
 body {
-    overflow-x: hidden;
     font-weight: 100;
     position: relative;
     margin: none;
@@ -440,7 +439,6 @@ header p.lead {
     background-position: 50%;
     position: relative;
     min-height: 100%;
-    overflow-x: hidden;
 }
 
 .floating-label-form-group {
