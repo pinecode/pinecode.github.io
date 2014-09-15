@@ -35,6 +35,9 @@ body {
     overflow-x: hidden;
     font-weight: 100;
     position: relative;
+    margin: none;
+    padding: none;
+    width: 100%;
 }
 
 html, body {
