@@ -32,11 +32,9 @@
  */
 
 body {
+    overflow-x: hidden;
     font-weight: 100;
     position: relative;
-    margin: none;
-    padding: none;
-    width: 100%;
 }
 
 html, body {
@@ -286,7 +284,6 @@ header {
     position: relative;
     text-shadow: 0 2px 0 rgba(0,0,0,0.5);
     min-height: 100%;
-    overflow-x: hidden;
 }
 
 header h1 {
