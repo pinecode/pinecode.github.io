@@ -39,7 +39,8 @@ $('.navbar-collapse ul li a').click(function() {
 /**
  * Parallax effect for the header.
  */
-var header,
+var isMobile = false,
+    header,
     headerPos,
     grid,
     gridPos,
@@ -60,7 +61,11 @@ grid   = $('header .grid-bg');
 headerContent = $('header .parallax');
 
 function loop() {
-    var top = window.pageYOffset;
+    var top = window.pageYOffset,
+        innerHeight = window.innerHeight,
+        opacityDivisor = 1.75;
+
+    isMobile = innerHeight < 500;
 
     // Avoid calculations if not needed
     if (lastPosition == window.pageYOffset) {
@@ -73,11 +78,14 @@ function loop() {
     headerPos = 50 + (top * 0.075)+'%';
     gridPos   = (top * 0.2);
 
-    headerContentOpacity = (100 - ((top / (window.innerHeight / 1.75)) * 100)) / 100;
+    if (isMobile) {
+        opacityDivisor = .65;
+    }
+
+    headerContentOpacity = (100 - ((top / (innerHeight / opacityDivisor)) * 100)) / 100;
 
     header.css('background-position-y', headerPos);
     grid.css('transform', 'translate(0px, ' + gridPos + 'px)');
-
 
     headerContent.css({
         opacity: headerContentOpacity,
