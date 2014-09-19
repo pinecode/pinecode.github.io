@@ -69,6 +69,14 @@ $(function() {
             'json'
         )
         .done(function() {
+            ga('send', {
+              'hitType': 'event',
+              'eventCategory': 'interaction',
+              'eventAction': 'contact',
+              'eventLabel': 'get-in-touch',
+              'eventValue': data
+            });
+
             // Success message
             $('#form-info').html("<div class='alert alert-success'>");
             $('#form-info > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
