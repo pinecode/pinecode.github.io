@@ -4,13 +4,22 @@ module.exports = function (grunt) {
         concat: {
             css: {
                 src: [
-                    'assets/css/*'
+                    ['assets/css/bootstrap.min.css', 'main.css']
                 ],
-                dest: 'dist/css/pinecode.css'
+                dest: 'dist/css/pinecode.min.css'
             },
             js: {
+                options: {
+                    separator: ';',
+                },
                 src: [
-                    'assets/js/*'
+                    [
+                        'assets/js/pinecode.js',
+                        'assets/js/contact.js',
+                        'assets/js/jquery.autogrowtextarea.min.js',
+                        'assets/js/jquery.easing.min.js',
+                        'assets/js/jquery-1.11.0.js'
+                    ]
                 ],
                 dest: 'dist/js/pinecode.js'
             }
@@ -18,7 +27,7 @@ module.exports = function (grunt) {
         cssmin: {
             css: {
                 src: 'dist/css/pinecode.css',
-                dest: 'dist/css/pinecode.min.css'
+                dest: 'dist/css/pinecode.css'
             }
         },
         uglify: {
@@ -29,9 +38,11 @@ module.exports = function (grunt) {
             }
         },
         copy: {
-            main: {
-                src: 'assets/img/*',
+            images: {
+                cwd: 'assets/img/',
+                src: '**/*',
                 dest: 'dist/img/',
+                expand: true
             }
         },
     });
@@ -40,5 +51,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-copy');
-    grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js']);
+    grunt.registerTask('default', ['concat:css', 'cssmin:css', 'concat:js', 'uglify:js', 'copy:images']);
 };

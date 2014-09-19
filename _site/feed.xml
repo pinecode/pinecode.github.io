@@ -5,35 +5,9 @@
     <description>Here&#39;s a description of Pinecode and how great Pinecode is!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 15 Sep 2014 12:53:33 -0700</pubDate>
-    <lastBuildDate>Mon, 15 Sep 2014 12:53:33 -0700</lastBuildDate>
+    <pubDate>Thu, 18 Sep 2014 14:41:23 -0700</pubDate>
+    <lastBuildDate>Thu, 18 Sep 2014 14:41:23 -0700</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-    
-      <item>
-        <title>Whole Hearted Eats</title>
-        <description>
-</description>
-        <pubDate>Fri, 18 Jul 2014 00:00:00 -0700</pubDate>
-        <link>/web%20development%20&amp;%20design/2014/07/18/Whole-Hearted-Eats/</link>
-        <guid isPermaLink="true">/web%20development%20&amp;%20design/2014/07/18/Whole-Hearted-Eats/</guid>
-        
-        
-        <category>web development &amp;amp; design</category>
-        
-      </item>
-    
-      <item>
-        <title>Google Plus</title>
-        <description>
-</description>
-        <pubDate>Sun, 13 Jul 2014 00:00:00 -0700</pubDate>
-        <link>/web%20development%20&amp;%20design/2014/07/13/Google-Plus/</link>
-        <guid isPermaLink="true">/web%20development%20&amp;%20design/2014/07/13/Google-Plus/</guid>
-        
-        
-        <category>web development &amp;amp; design</category>
-        
-      </item>
     
   </channel>
 </rss>

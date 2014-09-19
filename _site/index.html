@@ -11,17 +11,22 @@
 
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="dist/css/pinecode.css">
 
     <!-- Typekit fonts -->
     <script type="text/javascript" src="//use.typekit.net/lme7wgr.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54847713-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 </head>
 
 
@@ -34,7 +39,7 @@
         <div class="container">
             <div class="parallax">
                 <div class="col-lg-12">
-                    <img src="img/logo256.png" id="hero-logo" class="img-centered" alt="">
+                    <img src="dist/img/logo256.png" id="hero-logo" class="img-centered" alt="">
                     <div id="hero-content">
                         <h1>We're <strong>Pinecode.</strong></h1>
                         <p class="lead"><em>A small, perfectly shaped collaboration of developers, designers, and creative folk from the gardens of Victoria, British Columbia.</em></p>
@@ -88,23 +93,7 @@
         </div>
     </section>
 
-     <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery-1.11.0.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="/js/headroom.js"></script>
-    <script src="/js/classie.js"></script>
-    <script src="/js/jquery.easing.min.js"></script>
-    <script src="/js/jquery.autogrowtextarea.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="/js/contact.js"></script>
-
-    <!-- Custom JavaScript -->
-    <script src="/js/pinecode.js"></script>
+        <script src="/dist/js/pinecode.js"></script>
 
 
     </body>

@@ -281,7 +281,7 @@ header .btn-outline:hover, #contact .btn-outline:hover {
 header {
     text-align: center;
     color: #fff;
-    background-image: url('/img/hero-bg.jpg');
+    background-image: url('dist/img/hero-bg.jpg');
     background-size: cover;
     background-position-y: 50%;
     position: relative;
@@ -328,7 +328,7 @@ header p.lead {
     width: 100%;
     height: 100%;
     position: absolute;
-    background-image: url('/img/grid.png');
+    background-image: url('dist/img/grid.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
 }
@@ -433,7 +433,7 @@ header p.lead {
 #contact {
     padding: 0;
     /*background: url(http://31.media.tumblr.com/560a35b8fb40b1c069fa18ef9f2ea179/tumblr_n4cm73ozlb1st5lhmo1_1280.jpg);*/
-    background: url(img/contact-bg.jpg);
+    background: url(dist/img/contact-bg.jpg);
     background-color: #333;
     background-size: cover;
     background-position: 50%;
