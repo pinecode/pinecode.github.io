@@ -103,3 +103,7 @@ $("textarea").autoGrow();
 $(window).load(function() {
     header.addClass('loaded');
 });
+
+$('#work-with-us').one('click', function() {
+    ga('send', 'event', 'interaction', 'work-with-us', 'work with us button', 1);
+});

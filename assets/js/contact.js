@@ -69,7 +69,7 @@ $(function() {
             'json'
         )
         .done(function() {
-            ga('send', 'event', 'interaction', 'contact', 'get in touch', 1);
+            ga('send', 'event', 'interaction', 'contact', 'sent contact form', 1);
 
             // Success message
             $('#form-info').html("<div class='alert alert-success'>");
