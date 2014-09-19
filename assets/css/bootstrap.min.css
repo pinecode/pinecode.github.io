@@ -1435,7 +1435,7 @@ output {
     padding-top: 11px;
     font-size: 15px;
     line-height: 1.42857143;
-    color: #0A1E23
+    color: rgba(255, 255, 255, 0.75)
 }
 .form-control {
     display: block;
@@ -1444,7 +1444,7 @@ output {
     padding: 10px 15px;
     font-size: 15px;
     line-height: 1.42857143;
-    color: #0A1E23;
+    color: rgba(255, 255, 255, 0.75);
     background-color:#ffffff;
     background-image:none;
     border:1px solid #dce4ec;
