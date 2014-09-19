@@ -1,13 +1,3 @@
-/*!
- * Bootswatch v3.2.0
- * Homepage: http://bootswatch.com
- * Copyright 2012-2014 Thomas Park
- * Licensed under MIT
- * Based on Bootstrap
-*/
-
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -231,12 +221,7 @@ body {
     font-family: 'Source Sans Pro', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 15px;
     line-height: 1.42857143;
-    color: # {
-        {
-            site.color.secondary
-        }
-    }
-    ;
+    color: #0A1E23;
     background-color:#ffffff
 }
 input, button, select, textarea {
@@ -245,21 +230,8 @@ input, button, select, textarea {
     line-height: inherit
 }
 a {
-    color: # {
-        {
-            site.color.primary
-        }
-    }
-    ;
-    text-decoration:none
-}
-a:hover, a:focus {
-    color: # {
-        {
-            site.color.primary
-        }
-    }
-    ;
+    color: #0082FF;
+    text-decoration:none}{color: #0082FF;
     text-decoration:underline
 }
 a:focus {
@@ -418,11 +390,7 @@ mark, .mark {
     color: #b4bcc2
 }
 .text-primary {
-    color: # {
-        {
-            site.color.secondary
-        }
-    }
+    color: #0A1E23
 }
 a.text-primary:hover {
     color: #1a242f
@@ -453,21 +421,13 @@ a.text-danger:hover {
 }
 .bg-primary {
     color: #fff;
-    background-color: # {
-        {
-            site.color.secondary
-        }
-    }
+    background-color: #0A1E23
 }
 a.bg-primary:hover {
     background-color: #1a242f
 }
 .bg-success {
-    background-color: # {
-        {
-            site.color.primary
-        }
-    }
+    background-color: #0082FF
 }
 a.bg-success:hover {
     background-color: #128f76
@@ -1370,11 +1330,7 @@ table td[class*="col-"], table th[class*="col-"] {
     background-color: #dde4e6
 }
 .table>thead>tr>td.success, .table>tbody>tr>td.success, .table>tfoot>tr>td.success, .table>thead>tr>th.success, .table>tbody>tr>th.success, .table>tfoot>tr>th.success, .table>thead>tr.success>td, .table>tbody>tr.success>td, .table>tfoot>tr.success>td, .table>thead>tr.success>th, .table>tbody>tr.success>th, .table>tfoot>tr.success>th {
-    background-color: # {
-        {
-            site.color.primary
-        }
-    }
+    background-color: #0082FF
 }
 .table-hover>tbody>tr>td.success:hover, .table-hover>tbody>tr>th.success:hover, .table-hover>tbody>tr.success:hover>td, .table-hover>tbody>tr:hover>.success, .table-hover>tbody>tr.success:hover>th {
     background-color: #15a589
@@ -1439,12 +1395,7 @@ legend {
     margin-bottom: 21px;
     font-size: 22.5px;
     line-height: inherit;
-    color: # {
-        {
-            site.color.secondary
-        }
-    }
-    ;
+    color: #0A1E23;
     border:0;
     border-bottom:1px solid transparent
 }
@@ -1484,11 +1435,7 @@ output {
     padding-top: 11px;
     font-size: 15px;
     line-height: 1.42857143;
-    color: # {
-        {
-            site.color.secondary
-        }
-    }
+    color: #0A1E23
 }
 .form-control {
     display: block;
@@ -1497,12 +1444,7 @@ output {
     padding: 10px 15px;
     font-size: 15px;
     line-height: 1.42857143;
-    color: # {
-        {
-            site.color.secondary
-        }
-    }
-    ;
+    color: #0A1E23;
     background-color:#ffffff;
     background-image:none;
     border:1px solid #dce4ec;
@@ -1514,12 +1456,7 @@ output {
     transition:border-color ease-in-out .15s, box-shadow ease-in-out .15s
 }
 .form-control:focus {
-    border-color: # {
-        {
-            site.color.secondary
-        }
-    }
-    ;
+    border-color: #0A1E23;
     outline:0;
     -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(44, 62, 80, 0.6);
     box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(44, 62, 80, 0.6)
@@ -1680,11 +1617,7 @@ textarea.input-lg, select[multiple].input-lg {
 .has-success .input-group-addon {
     color: #ffffff;
     border-color: #ffffff;
-    background-color: # {
-        {
-            site.color.primary
-        }
-    }
+    background-color: #0082FF
 }
 .has-success .form-control-feedback {
     color: #ffffff
@@ -1880,8 +1813,8 @@ textarea.input-lg, select[multiple].input-lg {
 }
 .btn-primary {
     color: #ffffff;
-    background-color: #{{ site.color.secondary }};
-    border-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23;
+    border-color: ##0A1E23
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #ffffff;
@@ -1892,19 +1825,19 @@ textarea.input-lg, select[multiple].input-lg {
     background-image: none
 }
 .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
-    background-color: #{{ site.color.secondary }};
-    border-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23;
+    border-color: ##0A1E23
 }
 .btn-primary .badge {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:#ffffff
 }
 .btn-success {
     color: #ffffff;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
-    border-color:#{{ site.color.primary }}
+    border-color:#0082FF
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open>.dropdown-toggle.btn-success {
     color: #ffffff;
@@ -1915,12 +1848,12 @@ textarea.input-lg, select[multiple].input-lg {
     background-image: none
 }
 .btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success[disabled].active, fieldset[disabled] .btn-success.active {
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
-    border-color:#{{ site.color.primary }}
+    border-color:#0082FF
 }
 .btn-success .badge {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     background-color:#ffffff
 }
@@ -1988,7 +1921,7 @@ textarea.input-lg, select[multiple].input-lg {
     background-color: #ffffff
 }
 .btn-link {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     font-weight:normal;
     cursor:pointer;
@@ -2003,7 +1936,7 @@ textarea.input-lg, select[multiple].input-lg {
     border-color: transparent
 }
 .btn-link:hover, .btn-link:focus {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     text-decoration:underline;
     background-color:transparent
@@ -2128,13 +2061,13 @@ tbody.collapse.in {
 .dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
     text-decoration: none;
     color: #ffffff;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
 }
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
     color: #ffffff;
     text-decoration: none;
     outline: 0;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
 }
 .dropdown-menu>.disabled>a, .dropdown-menu>.disabled>a:hover, .dropdown-menu>.disabled>a:focus {
     color: #b4bcc2
@@ -2405,7 +2338,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     font-size: 15px;
     font-weight: normal;
     line-height: 1;
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     text-align:center;
     background-color:#ecf0f1;
@@ -2488,7 +2421,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     background-color: #ecf0f1;
-    border-color: #{{ site.color.primary }}
+    border-color: #0082FF
 }
 .nav .nav-divider {
     height: 1px;
@@ -2516,7 +2449,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     border-color: #ecf0f1 #ecf0f1 #ecf0f1
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:#ffffff;
     border:1px solid #ecf0f1;
@@ -2574,7 +2507,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
     color: #ffffff;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
 }
 .nav-stacked>li {
     float: none
@@ -2937,7 +2870,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     }
 }
 .navbar-default {
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
     ;
     border-color:transparent
 }
@@ -2945,7 +2878,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     background-color:transparent
 }
@@ -2956,7 +2889,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     background-color:transparent
 }
@@ -2989,7 +2922,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
         color: #ffffff
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #{{ site.color.primary }}
+        color: #0082FF
         ;
         background-color:transparent
     }
@@ -3006,19 +2939,19 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-default .navbar-link:hover {
-    color: #{{ site.color.primary }}
+    color: #0082FF
 }
 .navbar-default .btn-link {
     color: #ffffff
 }
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-    color: #{{ site.color.primary }}
+    color: #0082FF
 }
 .navbar-default .btn-link[disabled]:hover, fieldset[disabled] .navbar-default .btn-link:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:focus {
     color: #cccccc
 }
 .navbar-inverse {
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
     border-color:transparent
 }
@@ -3026,7 +2959,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:transparent
 }
@@ -3037,7 +2970,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:transparent
 }
@@ -3076,7 +3009,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
         color: #ffffff
     }
     .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus {
-        color: #{{ site.color.secondary }}
+        color: ##0A1E23
         ;
         background-color:transparent
     }
@@ -3093,13 +3026,13 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     color: #ffffff
 }
 .navbar-inverse .navbar-link:hover {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
 }
 .navbar-inverse .btn-link {
     color: #ffffff
 }
 .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
 }
 .navbar-inverse .btn-link[disabled]:hover, fieldset[disabled] .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:focus {
     color: #cccccc
@@ -3138,7 +3071,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
     line-height: 1.42857143;
     text-decoration: none;
     color: #ffffff;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
     border:1px solid transparent;
     margin-left:-1px
@@ -3206,7 +3139,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .pager li>a, .pager li>span {
     display: inline-block;
     padding: 5px 14px;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
     border:1px solid transparent;
     border-radius:15px
@@ -3223,7 +3156,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 .pager .disabled>a, .pager .disabled>a:hover, .pager .disabled>a:focus, .pager .disabled>span {
     color: #ffffff;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
     cursor:not-allowed
 }
@@ -3258,13 +3191,13 @@ a.label:hover, a.label:focus {
     background-color: #798d8f
 }
 .label-primary {
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
 }
 .label-primary[href]:hover, .label-primary[href]:focus {
     background-color: #1a242f
 }
 .label-success {
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
 }
 .label-success[href]:hover, .label-success[href]:focus {
     background-color: #128f76
@@ -3298,7 +3231,7 @@ a.label:hover, a.label:focus {
     vertical-align: baseline;
     white-space: nowrap;
     text-align: center;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
     ;
     border-radius:10px
 }
@@ -3319,7 +3252,7 @@ a.badge:hover, a.badge:focus {
     cursor: pointer
 }
 a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:#ffffff
 }
@@ -3379,11 +3312,11 @@ a.list-group-item.active>.badge, .nav-pills>.active>a>.badge {
     margin-right: auto
 }
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
-    border-color: #{{ site.color.primary }}
+    border-color: #0082FF
 }
 .thumbnail .caption {
     padding: 9px;
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
 }
 .alert {
     padding: 15px;
@@ -3414,9 +3347,9 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     color: inherit
 }
 .alert-success {
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
-    border-color:#{{ site.color.primary }}
+    border-color:#0082FF
     ;
     color:#ffffff
 }
@@ -3492,7 +3425,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     line-height: 21px;
     color: #ffffff;
     text-align: center;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
     ;
     -webkit-box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow:inset 0 -1px 0 rgba(0, 0, 0, 0.15);
@@ -3522,7 +3455,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     box-shadow: none
 }
 .progress-bar-success {
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
 }
 .progress-striped .progress-bar-success {
     background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3630,9 +3563,9 @@ a.list-group-item:hover, a.list-group-item:focus {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     z-index: 2;
     color: #ffffff;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
     ;
-    border-color:#{{ site.color.secondary }}
+    border-color:##0A1E23
 }
 .list-group-item.active .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active .list-group-item-heading>small, .list-group-item.active:hover .list-group-item-heading>small, .list-group-item.active:focus .list-group-item-heading>small, .list-group-item.active .list-group-item-heading>.small, .list-group-item.active:hover .list-group-item-heading>.small, .list-group-item.active:focus .list-group-item-heading>.small {
     color: inherit
@@ -3642,7 +3575,7 @@ a.list-group-item:hover, a.list-group-item:focus {
 }
 .list-group-item-success {
     color: #ffffff;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
 }
 a.list-group-item-success {
     color: #ffffff
@@ -3857,7 +3790,7 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
     border-color: #ecf0f1
 }
 .panel-default>.panel-heading {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:#ecf0f1;
     border-color:#ecf0f1
@@ -3867,50 +3800,50 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 .panel-default>.panel-heading .badge {
     color: #ecf0f1;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
 }
 .panel-default>.panel-footer+.panel-collapse>.panel-body {
     border-bottom-color: #ecf0f1
 }
 .panel-primary {
-    border-color: #{{ site.color.secondary }}
+    border-color: ##0A1E23
 }
 .panel-primary>.panel-heading {
     color: #ffffff;
-    background-color: #{{ site.color.secondary }}
+    background-color: ##0A1E23
     ;
-    border-color:#{{ site.color.secondary }}
+    border-color:##0A1E23
 }
 .panel-primary>.panel-heading+.panel-collapse>.panel-body {
-    border-top-color: #{{ site.color.secondary }}
+    border-top-color: ##0A1E23
 }
 .panel-primary>.panel-heading .badge {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
     ;
     background-color:#ffffff
 }
 .panel-primary>.panel-footer+.panel-collapse>.panel-body {
-    border-bottom-color: #{{ site.color.secondary }}
+    border-bottom-color: ##0A1E23
 }
 .panel-success {
-    border-color: #{{ site.color.primary }}
+    border-color: #0082FF
 }
 .panel-success>.panel-heading {
     color: #ffffff;
-    background-color: #{{ site.color.primary }}
+    background-color: #0082FF
     ;
-    border-color:#{{ site.color.primary }}
+    border-color:#0082FF
 }
 .panel-success>.panel-heading+.panel-collapse>.panel-body {
-    border-top-color: #{{ site.color.primary }}
+    border-top-color: #0082FF
 }
 .panel-success>.panel-heading .badge {
-    color: #{{ site.color.primary }}
+    color: #0082FF
     ;
     background-color:#ffffff
 }
 .panel-success>.panel-footer+.panel-collapse>.panel-body {
-    border-bottom-color: #{{ site.color.primary }}
+    border-bottom-color: #0082FF
 }
 .panel-info {
     border-color: #3498db
@@ -4777,11 +4710,11 @@ button.close {
 }
 .navbar-default .badge {
     background-color: #fff;
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
 }
 .navbar-inverse .badge {
     background-color: #fff;
-    color: #{{ site.color.primary }}
+    color: #0082FF
 }
 .navbar-brand {
     padding: 18.5px 15px 20.5px
@@ -4795,10 +4728,10 @@ button.close {
     box-shadow: none
 }
 .text-primary, .text-primary:hover {
-    color: #{{ site.color.secondary }}
+    color: ##0A1E23
 }
 .text-success, .text-success:hover {
-    color: #{{ site.color.primary }}
+    color: #0082FF
 }
 .text-danger, .text-danger:hover {
     color: #e74c3c
@@ -4852,13 +4785,13 @@ table-bordered>thead>tr>th, .table-bordered>thead>tr>th, table-bordered>tbody>tr
     border-color: #e74c3c
 }
 .has-success .help-block, .has-success .control-label, .has-success .radio, .has-success .checkbox, .has-success .radio-inline, .has-success .checkbox-inline, .has-success .form-control-feedback {
-    color: #{{ site.color.primary }}
+    color: #0082FF
 }
 .has-success .form-control, .has-success .form-control:focus {
-    border: 2px solid #{{ site.color.primary }}
+    border: 2px solid #0082FF
 }
 .has-success .input-group-addon {
-    border-color: #{{ site.color.primary }}
+    border-color: #0082FF
 }
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     border-color: transparent

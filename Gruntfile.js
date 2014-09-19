@@ -4,9 +4,9 @@ module.exports = function (grunt) {
         concat: {
             css: {
                 src: [
-                    ['assets/css/bootstrap.min.css', 'main.css']
+                    ['assets/css/bootstrap.min.css', 'assets/css/main.css']
                 ],
-                dest: 'dist/css/pinecode.min.css'
+                dest: 'dist/css/pinecode.css'
             },
             js: {
                 options: {
@@ -14,11 +14,10 @@ module.exports = function (grunt) {
                 },
                 src: [
                     [
-                        'assets/js/pinecode.js',
+                        'assets/js/jquery-1.11.0.js',
+                        'assets/js/*.js',
                         'assets/js/contact.js',
-                        'assets/js/jquery.autogrowtextarea.min.js',
-                        'assets/js/jquery.easing.min.js',
-                        'assets/js/jquery-1.11.0.js'
+                        'assets/js/pinecode.js'
                     ]
                 ],
                 dest: 'dist/js/pinecode.js'
