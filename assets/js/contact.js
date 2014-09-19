@@ -74,7 +74,7 @@ $(function() {
               'eventCategory': 'interaction',
               'eventAction': 'contact',
               'eventLabel': 'get-in-touch',
-              'eventValue': data
+              'eventValue': 1
             });
 
             // Success message
