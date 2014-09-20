@@ -4,7 +4,11 @@ module.exports = function (grunt) {
         concat: {
             css: {
                 src: [
-                    ['assets/css/bootstrap.min.css', 'assets/css/main.css']
+                    [
+                        'assets/css/bootstrap.min.css',
+                        'assets/css/monokai.css',
+                        'assets/css/main.css'
+                    ]
                 ],
                 dest: 'dist/css/pinecode.css'
             },

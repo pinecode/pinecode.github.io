@@ -1,0 +1,19 @@
+---
+layout: default
+area: blog
+title: The Pinecode Blog
+---
+
+{% include blog-header.html %}
+
+  <section id="blog-posts">
+    <div class="container">
+      {% for post in site.posts %}
+        <h3><a href="{{ post.url }}">{{ post.title }}</a> <small>{{ post.date | date: "%B %e, %Y" }}</small></h3>
+        <p>{{ post.excerpt | strip_html }} <a href="{{ post.url }}">Read more...</a></p>
+        <hr>
+      {% endfor %}
+    </div>
+  </section>
+
+  {% include footer.html %}

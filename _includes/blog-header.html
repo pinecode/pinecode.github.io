@@ -1,0 +1,13 @@
+    <!-- Header -->
+    <header {% if page.header_img %}style="background-image: url('/dist/img/blog/{{ page.header_img }}')"{% endif %}>
+        <div class="pattern-overlay subdued"></div>
+        <!-- <div class="grid-bg"></div> -->
+        <div class="container">
+            <div class="parallax">
+                <div class="col-lg-8 col-lg-offset-2">
+                        <h1>{% if page.title %}{{ page.title }}{% else %}Blog{% endif %}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>

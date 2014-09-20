@@ -1,0 +1,24 @@
+---
+layout: default
+area: blog
+---
+
+  {% include blog-header.html %}
+
+  <article>
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="meta">
+          <ul>
+            <li class="date">{{ page.date | date: "%B %e, %Y" }}</li>
+            <li><a href="/blog">Back to Blog</a></li>
+          </ul>
+        </div>
+        <div class="entry">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </article>
+
+  {% include footer.html %}

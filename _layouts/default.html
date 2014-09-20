@@ -3,10 +3,10 @@
 
   {% include head.html %}
 
-    <body id="page-top" class="index">
+    <body id="page-top" class="{{ page.area }}">
 
-    {% include header.html %}
-    {% include contact.html %}
+    {{ content }}
+
     {% include js.html %}
 
     </body>
