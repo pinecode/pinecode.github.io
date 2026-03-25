@@ -7,8 +7,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useSpring } from 'motion/react';
 import { Mail, MapPin, Terminal, Database, Cpu, Globe, ArrowRight } from 'lucide-react';
 
-const LOGO_URL = `${import.meta.env.BASE_URL}logo.png`;
-const PINE_DECO_URL = `${import.meta.env.BASE_URL}pine-deco.png`;
+const LOGO_URL = "/logo.png";
+const PINE_DECO_URL = "/pine-deco.png";
 
 export default function App() {
   const { scrollY, scrollYProgress } = useScroll();
